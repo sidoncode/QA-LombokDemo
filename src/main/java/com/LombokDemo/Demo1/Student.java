@@ -11,9 +11,7 @@ public class Student {
 
 
     //default constructor
-    public Student(){
-
-    }
+    public Student(){}
 
     // parametrized Constuctor
     public Student(Integer studentID, String studentName,String studentClass,String studentEmailAddress,Boolean studentPassed,
@@ -88,12 +86,17 @@ public class Student {
         Student student1 = new Student(1,"Anoop",
                 "KG","anoop@123.com",true,1.01f);
 
+        System.out.println(student1.toString());
+
         Student student2 = new Student(2,"Sid",
                 "Nursery","sid@123.com",false,14.01f);
+
+        System.out.println(student2.toString());
 
         Student student3 = new Student(3,"UnderTaker",
                 "WWE","undertaker@123.com",true,31.0f);
 
+        System.out.println(student3.toString());
     }
 
 }
